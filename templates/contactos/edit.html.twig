@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}editar contacto
+{% endblock %}
+
+{% block body %}
+	<h1>Editar contacto</h1>
+	<div class="row p-2 mb-5">
+		{{ include('contactos/_delete_form.html.twig') }}
+	</div>
+
+	{{ include('contactos/_form.html.twig', {'button_label': 'Actualizar'}) }}
+
+
+{% endblock %}

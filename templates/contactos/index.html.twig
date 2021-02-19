@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contactos index
+{% endblock %}
+
+{% block body %}
+	<h1>Agenda</h1>
+
+	<div class="row">
+		<div class="col-4">
+
+			<a href="{{ path('list', {'type': 'personal'}) }}">
+				<div class="col">
+					<img src="{{ asset('images/gin-pers2.png') }}" alt="Personales"/>
+					<h3>Personales</h3>
+				</div>
+			</a>
+
+
+		</div>
+		<div class="col-4">
+
+			<a href="{{ path('list', {'type': 'todos'}) }}">
+				<div class="col">
+					<img src="{{ asset('images/both.png') }}" alt="Todos"/>
+					<h3>Todos</h3>
+
+				</div>
+
+			</a>
+
+		</div>
+		<div class="col-4">
+			<a href="{{ path('list', {'type': 'profesional'}) }}">
+				<div class="col">
+					<img src="{{ asset('images/hijikata-prof1.1.jpg') }}" alt="Profesionales"/>
+					<h3>Profesionales</h3>
+					</div></a>
+				</div>
+			</div>
+
+		{% endblock %}

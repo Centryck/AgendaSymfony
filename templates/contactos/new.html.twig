@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Contactos
+{% endblock %}
+
+{% block body %}
+	<h1>Nuevo contacto</h1>
+	<div class="row">
+
+		<div class="col">
+			{{ include('contactos/_form.html.twig') }}
+		</div>
+		<div class="col-3">
+			<img src="{{ asset('images/pngwing.com (1).png') }}" alt="gin-read" class="position-absolute fixed-bottom ml-5"/>
+		</div>
+	</div>
+
+{% endblock %}

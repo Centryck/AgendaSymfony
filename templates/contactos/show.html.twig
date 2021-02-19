@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contactos{% endblock %}
+
+{% block body %}
+    <h1>Contactos</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ contacto.id }}</td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ contacto.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Apellidos</th>
+                <td>{{ contacto.apellidos }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ contacto.email }}</td>
+            </tr>
+            <tr>
+                <th>Telefono</th>
+                <td>{{ contacto.telefono }}</td>
+            </tr>
+            <tr>
+                <th>Notas</th>
+                <td>{{ contacto.notas }}</td>
+            </tr>
+            <tr>
+                <th>Tipo</th>
+                <td>{{ contacto.tipo }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('list', {'type': contacto.tipo}) }}">Volver a la lista</a>
+    <br>
+
+    <a href="{{ path('contactos_edit', {'id': contacto.id}) }}">editar</a>
+
+    {{ include('contactos/_delete_form.html.twig') }}
+{% endblock %}

@@ -1,0 +1,24 @@
+.agregar {
+    background-color:rgb(243, 243, 243);
+    color: rgb(37, 36, 36);
+    border:orange 2px solid !important;
+    
+    font-size: 3rem !important;
+    
+}
+.volver {
+    background-color: rgb(243, 243, 243);
+    color: rgb(93, 129, 206);
+    border: rgb(24, 24, 24) 2px solid !important;
+    
+    font-size: 3rem !important;
+    
+}
+
+.head{
+    justify-content: space-between;
+}
+
+body{
+    margin:0;
+}

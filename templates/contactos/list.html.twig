@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Lista de contactos
+{% endblock %}
+
+{% block body %}
+	<h1 class="m-5 text-center">Lista de contactos</h1>
+
+	<div class="row">
+		<div class="col-3">
+			<img src="{{ asset('images/ginpachi.png') }}" alt="Ginpachi"/>
+		</div>
+		<div class="col container overflow-auto">
+			<table class="table" id="contactos">
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>Apellidos</th>
+						<th>Email</th>
+						<th>Telefono</th>
+						<th>Notas</th>
+						<th>Tipo</th>
+						<th>Acciones</th>
+					</tr>
+				</thead>
+				<tbody>
+
+					{% for contacto in pagination %}
+						<tr>
+							<td>{{ contacto.nombre }}</td>
+							<td>{{ contacto.apellidos }}</td>
+							<td>{{ contacto.email }}</td>
+							<td>{{ contacto.telefono }}</td>
+							<td>{{ contacto.notas }}</td>
+							{% if contacto.tipo == 'personal' %}
+								<td> 🧑 </td>
+							{% else %}
+								<td> 💼 </td>
+							{% endif %}
+
+
+							<td>
+								<a href="{{ path('contactos_show', {'id': contacto.id}) }}">info</a>
+								<a href="{{ path('contactos_edit', {'id': contacto.id}) }}">editar</a>
+							</td>
+						</tr>
+					{% else %}
+						<tr>
+							<td colspan="8">no records found</td>
+						</tr>
+					{% endfor %}
+					<div class="navigation">
+						{{ knp_pagination_render(pagination) }}
+					</div>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+{% endblock %}
