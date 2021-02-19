@@ -32,7 +32,7 @@ Es necesario tener los siguietes programas o librerias para que funcione:
 
 Para poder usar la Gintagenda, debes descargar el proyecto y guardarlo en la carpeta. Tras eso, dirígete a la ubicación del archivo desde el CMD y ejecuta el comando:
 
-    _symfony server:start_
+    symfony server:start
 
 Tras esto, dirígete a la siguiente ruta:
 
