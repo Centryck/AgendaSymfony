@@ -54,10 +54,10 @@ Podrás comprobar que la agenda estará funcionando adecuadamente.
 (creamos el proyecto)
 
 (creamos la entidad)
-**_php bin/console make:entity Contacto_
+**_php bin/console make:entity Contacto_**
 
 (hacemos el 95% de la agenda)
-**_php bin/console make:crud Contacto_
+**_php bin/console make:crud Contacto_**
 
 (configuramos la BBDD en el .env asegurandonos que lo tenemos en SQLite)
 
@@ -81,7 +81,7 @@ Podrás comprobar que la agenda estará funcionando adecuadamente.
 twig:
     form_themes: ['bootstrap_4_layout.html.twig']
 
-**Con esto ya tendríamos hecha casi toda la agenda, con estilos de bootstrap y todo, faltarían cosas como el selector de tipo, que vendría siendo algo tal que así:
+**Con esto ya tendríamos hecha casi toda la agenda, con estilos de bootstrap y todo, faltarían cosas como el selector de tipo, que vendría siendo algo tal que así:**
 
 	/**
      * @Route("/list/{type}", name="list")
@@ -122,7 +122,7 @@ twig:
     }
 
    
-   **Cabe destacar que habrá que incluir un fichero html.twig a mayores que sustituya el roll actual del index
+   **Cabe destacar que habrá que incluir un fichero html.twig a mayores que sustituya el roll actual del index**
 
 ## Autor
 Centryck **Carlos Santillana Garabana**
