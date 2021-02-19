@@ -78,8 +78,8 @@ Podrás comprobar que la agenda estará funcionando adecuadamente.
 
 (nos dirigimos a _config/packages/twig.yaml_ y ponemos lo siguiente:)
 
-twig:
-    form_themes: ['bootstrap_4_layout.html.twig']
+**twig:**
+   **form_themes: ['bootstrap_4_layout.html.twig']**
 
 **Con esto ya tendríamos hecha casi toda la agenda, con estilos de bootstrap y todo, faltarían cosas como el selector de tipo, que vendría siendo algo tal que así:**
 
